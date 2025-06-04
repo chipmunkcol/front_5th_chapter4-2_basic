@@ -4,9 +4,6 @@
 최적화 할것들
 
 - main.js 에서 동적으로 country-bar 속성을 변경해 CLS에 영향을 주고 있음 opacity로 변경하면 CLS를 올리지 않을까?
-- 적용 후 
-<img src="./images/readme/스크린샷 2025-06-04 170711.png" width=400 />
-아니 갑자기 너무 좋아진거 아니냐고..
 
 1. FCP
     1) 렌더링 차단 리소스 제거하기
@@ -39,7 +36,21 @@
         - (적용) jpg 이미지를 webp로 변환해 제공하자
         [무료 변환 사이트](https://convertio.co/kr/jpg-webp/) 이용
 
-        - (적용 후) 매우 편안해졌다
-            <img src="./images/readme/스크린샷 2025-06-04 175720.png" width=400 />
+        - (적용 후) 다시 조금 정상화된듯
+            <img src="./images/readme/스크린샷 2025-06-04 213948.png" width=400 />
+
+    2) 오픈스크린 이미지 지연하기
+        - (내용) 반응형 이미지를 모두 불러와서 해당안되는 이미지를 css에서 display: none 처리해서 불필요한 네트워킹이 발생함
+        - (적용) picture source 태그를 사용해 기기에 따라 적합한 이미지를 선택하게함
+            picture은 다양한 화면 크기와 해상도에 맞춰 최적의 이미지를 제공하기 위해 사용됨.
+            작동 원리) 브라우저는 picture 요소를 만나면, 사용자의 화면 크기 등을 기반으로 media 쿼리를 판단하고, 가장 먼저 일치하는 source 요소의 이미지를 선택하여 표시함.
+            만약 어떤 source 요소에도 일치하는 미디어 쿼리가 없다면 마지막에 있는 img 요소의 이미지를 사용함.
+            ```
+            <picture>
+                <source media="(min-width: 960px)" srcset="images/Hero_Desktop.webp" />
+                <source media="(min-width: 576px)" srcset="images/Hero_Tablet.webp" />
+                <img src="images/Hero_Mobile.webp" alt="Hero Image" style="display: block; width: 100%; height: auto;" />
+            </picture>
+            ```
 
     

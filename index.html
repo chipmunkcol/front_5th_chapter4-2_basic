@@ -64,10 +64,19 @@
 
     <section class="hero">
 
-        <img class="desktop" src="images/Hero_Desktop.webp" width="100%" style="height: auto;">
+        <!-- <img class="desktop" src="images/Hero_Desktop.webp" width="100%" style="height: auto;">
         <img class="mobile" src="images/Hero_Mobile.webp" width="100%" style="height: auto;">
-        <img class="tablet" src="images/Hero_Tablet.webp" width="100%" style="height: auto;">
-
+        <img class="tablet" src="images/Hero_Tablet.webp" width="100%" style="height: auto;"> -->
+        <!-- <img srcset="
+            images/Hero_Mobile.webp 576w,
+            images/Hero_Tablet.webp 960w,
+            images/Hero_Desktop.webp 1000w
+        " src="images/Hero_Desktop.webp" alt="main-banner" width="100%" style="display: block; height: auto;" /> -->
+        <picture>
+            <source media="(min-width: 960px)" srcset="images/Hero_Desktop.webp" />
+            <source media="(min-width: 576px)" srcset="images/Hero_Tablet.webp" />
+            <img src="images/Hero_Mobile.webp" alt="Hero Image" style="display: block; width: 100%; height: auto;" />
+        </picture>
         <div class="hero-content">
             <div class="container">
                 <h1>Discover our line of VR Headsets</h1>
