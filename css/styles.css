@@ -1,6 +1,3 @@
-
-
-
 body {
     margin: 0;
     font-family: 'Heebo';
@@ -12,7 +9,7 @@ body {
     max-width: 90%;
     margin: auto;
     padding: 0 16px;
-    
+
 }
 
 
@@ -23,7 +20,7 @@ ul {
 
 header {
     background-color: #FFF;
-    box-shadow: 0 1px 6px 0 rgba(0,0,0,0.15);
+    box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.15);
     height: 80px;
     position: fixed;
     top: 0;
@@ -158,8 +155,8 @@ section.hero img.desktop {
     font-weight: 700;
     letter-spacing: 0.4px;
     line-height: 24px;
-    text-align: center;  
-    border: none;  
+    text-align: center;
+    border: none;
     text-transform: uppercase;
     cursor: pointer;
 }
@@ -178,10 +175,13 @@ section.country-bar {
     flex-direction: column;
     height: 60px;
     background-color: #f2f2f2;
+    opacity: 1;
+    transition: opacity 0.3s ease;
 }
 
 section.country-bar.hidden {
-    display: none;
+    /* display: none; */
+    opacity: 0;
 }
 
 section.best-sellers {
@@ -213,7 +213,7 @@ section.best-sellers .container {
     padding: 0 8px;
     flex-wrap: wrap;
     box-sizing: border-box;
-    
+
 }
 
 section.best-sellers .product-slider .product {
@@ -283,7 +283,7 @@ section.best-sellers .product-slider .product .product-info .title {
     margin-bottom: 6px;
     font-weight: normal;
     margin-top: 0;
-    
+
 }
 
 section.best-sellers .product-slider .product .product-info .price {
@@ -330,7 +330,7 @@ section.best-sellers .product-slider .product:hover .product-info button {
 
 
 section.newsletter {
-    background-color: rgba(200,200,200,0.18);
+    background-color: rgba(200, 200, 200, 0.18);
     max-width: 955px;
     text-align: center;
     padding: 72px 0;
@@ -472,7 +472,7 @@ footer .copyright-text {
     header nav ul li {
         display: none;
     }
-    
+
     header nav ul li.menu-icon {
         display: inline-block;
     }
@@ -490,25 +490,25 @@ footer .copyright-text {
         letter-spacing: 1px;
         line-height: 46px;
     }
-    
+
     .hero-content p {
         font-size: 16px;
         letter-spacing: 0.4px;
         line-height: 24px;
     }
-    
+
     .hero-content button {
         font-size: 14px;
         letter-spacing: 0.35px;
         line-height: 21px;
         width: 196px;
-        
+
     }
 
     section.best-sellers {
         padding-top: 50px;
     }
-    
+
     section.best-sellers h1 {
         font-size: 28px;
         letter-spacing: 0.7px;
@@ -526,7 +526,7 @@ footer .copyright-text {
     }
 
     section.best-sellers .product-slider .product {
-        min-width: 220px; 
+        min-width: 220px;
         margin: 17px 8px;
     }
 
@@ -536,20 +536,20 @@ footer .copyright-text {
         line-height: 30px;
         margin-bottom: 5px;
     }
-    
+
     section.best-sellers .product-slider .product .product-info .title {
         font-size: 13px;
         letter-spacing: 0.5px;
         line-height: 18px;
         margin-bottom: 8px;
     }
-    
+
     section.best-sellers .product-slider .product .product-info .price {
         font-size: 16px;
         letter-spacing: 0.4px;
         line-height: 30px;
     }
-    
+
     section.best-sellers .product-slider .product .product-info .price .original-price {
         font-size: 9px;
         letter-spacing: 0.23px;
@@ -557,7 +557,7 @@ footer .copyright-text {
         display: block;
         line-height: 14px;
     }
-    
+
     section.best-sellers .product-slider .product .product-info button {
         height: 36px;
         width: 193px;
@@ -579,13 +579,13 @@ footer .copyright-text {
         padding: 50px 0;
         margin: 50px auto;
     }
-    
+
     section.newsletter h3 {
         font-size: 22px;
         letter-spacing: 0.55px;
         line-height: 42px;
     }
-    
+
     section.newsletter p {
         font-size: 14px;
         letter-spacing: 0.35px;
@@ -595,13 +595,14 @@ footer .copyright-text {
     footer .bottom-nav {
         padding: 50px 0;
     }
-    
+
     footer .bottom-nav .container {
         max-width: 90%;
     }
-    
+
 
 }
+
 /* End of Design for Tablets */
 
 /* Start of Design for Mobile Phones */
@@ -638,24 +639,24 @@ footer .copyright-text {
         margin-bottom: 32px;
         margin-top: 27px;
     }
-    
+
     .hero-content p {
         display: none;
     }
-    
+
     .hero-content button {
         font-size: 14px;
         letter-spacing: 0.35px;
         line-height: 21px;
         width: 196px;
         margin: auto;
-        
+
     }
 
     section.best-sellers {
         padding-top: 64px;
     }
-    
+
     section.best-sellers .product-slider .product {
         width: 82%;
         max-width: 360px;
@@ -676,29 +677,29 @@ footer .copyright-text {
     section.best-sellers .product-slider {
         margin-top: 42px;
     }
-    
+
     section.best-sellers .product-slider .product .product-info .categories {
         margin-bottom: 7px;
     }
-    
+
     section.best-sellers .product-slider .product .product-info .title {
         font-size: 14px;
         letter-spacing: 0.54px;
         line-height: 18px;
     }
-    
+
     section.best-sellers .product-slider .product .product-info .price {
         font-size: 20px;
         font-weight: 700;
         letter-spacing: 0.5px;
     }
-    
+
     section.best-sellers .product-slider .product .product-info .price .original-price {
         font-size: 11px;
         letter-spacing: 0.28px;
         line-height: 20px;
     }
-    
+
     section.best-sellers .product-slider .product .product-info button {
         height: 36px;
         width: 146px;
@@ -715,7 +716,7 @@ footer .copyright-text {
     section.newsletter form input {
         max-width: 65%;
     }
-    
+
     section.newsletter form button {
         max-width: 35%;
     }
@@ -734,11 +735,9 @@ footer .copyright-text {
         margin-bottom: 0;
     }
 
-   
+
 
 
 }
+
 /* End of Design for Mobile Phones */
-
-
-
