@@ -62,5 +62,6 @@
 3. TBT (Total Blocking Time)
 <img src="./images/readme/스크린샷 2025-06-04 224610.png"  width=400 />
     1) lazy loading
-    <!-- 2)  -->
+    2) DOM 추가 시 Fragment 사용
+    3) Web Worker 로 무거운 연산 백그라운드에서 진행 
     

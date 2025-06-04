@@ -9,6 +9,8 @@ function displayProducts(products) {
     // Find the container where products will be displayed
     const container = document.querySelector('#all-products .container');
 
+    // DocumentFragment는 메모리에서 작업 후 DOM에 한 번만 삽입해 효율적
+    const fragment = document.createDocumentFragment();
 
     // Iterate over each product and create the HTML structure safely
     products.forEach(product => {
@@ -57,11 +59,11 @@ function displayProducts(products) {
         productElement.appendChild(pictureDiv);
         productElement.appendChild(infoDiv);
 
-        // Append the new product element to the container
-        container.appendChild(productElement);
+        fragment.appendChild(productElement);
     });
 
-
+    // Append the new product element to the container
+    container.appendChild(fragment);
 
 }
 
@@ -70,7 +72,15 @@ function displayProducts(products) {
 loadProducts();
 
 // Simulate heavy operation. It could be a complex price calculation.
-for (let i = 0; i < 10000000; i++) {
-    const temp = Math.sqrt(i) * Math.sqrt(i);
-}
+// for (let i = 0; i < 10000000; i++) {
+//     const temp = Math.sqrt(i) * Math.sqrt(i);
+// }
 
+// web Worker 설정
+if (window.Worker) {
+    const worker = new Worker('./js/worker.js')
+
+    worker.addEventListener('message', (e) => {
+        console.log('worker message!', e.data)
+    }, false);
+}
