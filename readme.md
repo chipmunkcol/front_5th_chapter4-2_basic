@@ -36,8 +36,10 @@
 
 2. LCP
     1) 차세대 형식을 사용해 이미지 제공하기
-        - jpg 이미지를 webp로 변환해 제공하자
+        - (적용) jpg 이미지를 webp로 변환해 제공하자
         [무료 변환 사이트](https://convertio.co/kr/jpg-webp/) 이용
 
+        - (적용 후) 매우 편안해졌다
+            <img src="./images/readme/스크린샷 2025-06-04 175720.png" width=400 />
 
     
