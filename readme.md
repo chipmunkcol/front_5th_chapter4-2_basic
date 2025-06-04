@@ -53,4 +53,14 @@
             </picture>
             ```
 
+        - (적용 후)
+            <img src="./images/readme/스크린샷 2025-06-04 223636.png" width=400 />
+            
+            이미지만 변경해줘도 많은 부분이 해결되는걸 알수있다.
+
+        
+3. TBT (Total Blocking Time)
+<img src="./images/readme/스크린샷 2025-06-04 224610.png"  width=400 />
+    1) lazy loading
+    <!-- 2)  -->
     
