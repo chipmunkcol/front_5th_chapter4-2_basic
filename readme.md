@@ -122,3 +122,6 @@
         }
         ```
 
+        (적용 후)
+        잘 안된것 같다 문제는 section 태그의 best-sellers 가 문제였는데 child요소에 height 값을 줘서 그런가같다.
+

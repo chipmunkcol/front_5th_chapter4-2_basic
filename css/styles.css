@@ -199,6 +199,10 @@ section.best-sellers {
     padding-top: 80px;
 }
 
+#best-sellers-section {
+    height: 572px;
+}
+
 section.best-sellers h1 {
     text-align: center;
     font-size: 34px;
@@ -771,5 +775,9 @@ footer .copyright-text {
         display: flex;
         flex-direction: column;
         align-items: center;
+    }
+
+    #best-sellers-section {
+        height: 1236px;
     }
 }
