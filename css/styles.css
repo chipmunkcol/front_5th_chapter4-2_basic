@@ -98,7 +98,7 @@ section.hero img {
     width: 100%;
     height: auto;
     filter: brightness(50%);
-    display: none;
+    /* display: none; */
 }
 
 section.hero img.desktop {
@@ -477,9 +477,9 @@ footer .copyright-text {
         display: inline-block;
     }
 
-    section.hero img.desktop {
+    /* section.hero img.desktop {
         display: none;
-    }
+    } */
 
     section.hero img.tablet {
         display: initial;
@@ -617,9 +617,9 @@ footer .copyright-text {
         height: 7px;
     }
 
-    section.hero img.tablet {
+    /* section.hero img.tablet {
         display: none;
-    }
+    } */
 
     section.hero img.mobile {
         display: initial;
@@ -741,3 +741,16 @@ footer .copyright-text {
 }
 
 /* End of Design for Mobile Phones */
+
+.product-picture .img {
+    width: 100px;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+}
+
+@media (max-width: 576px) {
+    .product-picture .img {
+        width: 145px;
+
+    }
+}

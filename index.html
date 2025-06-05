@@ -75,10 +75,10 @@
             images/Hero_Tablet.webp 960w,
             images/Hero_Desktop.webp 1000w
         " src="images/Hero_Desktop.webp" alt="main-banner" width="100%" style="display: block; height: auto;" /> -->
-        <picture>
+        <picture style="width: 100%; aspect-ratio: 16/9;">
             <source media="(min-width: 960px)" srcset="images/Hero_Desktop.webp" />
             <source media="(min-width: 576px)" srcset="images/Hero_Tablet.webp" />
-            <img src="images/Hero_Mobile.webp" alt="Hero Image" style="display: block; width: 100%; height: auto;" />
+            <img src="images/Hero_Mobile.webp" alt="Hero Image" style="width: 100%; object-fit: cover;" />
         </picture>
         <div class="hero-content">
             <div class="container">

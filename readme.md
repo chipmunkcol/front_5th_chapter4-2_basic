@@ -64,4 +64,32 @@
     1) lazy loading
     2) DOM 추가 시 Fragment 사용
     3) Web Worker 로 무거운 연산 백그라운드에서 진행 
-    
+
+    (적용후)
+    <img src="./images/readme/스크린샷 2025-06-05 000106.png"  width=400 />
+    TBT 0 밀리초가 나온다 (0밀리초..?)
+
+4. CLS (Cumulative Layout Shift)
+    1) 브라우저에게 이미지의 height 값을 알려주자 
+    - aspect-ratio 설정 (width & object-fit: cover 속성화 함께할것!)
+
+        ```
+        <picture style="width: 100%; aspect-ratio: 16/9;">
+            <source media="(min-width: 960px)" srcset="images/Hero_Desktop.webp" />
+            <source media="(min-width: 576px)" srcset="images/Hero_Tablet.webp" />
+            <img src="images/Hero_Mobile.webp" alt="Hero Image" style="width: 100%; object-fit: cover;" />
+        </picture>
+
+        .product-picture .img {
+        width: 100px;
+        aspect-ratio: 1/1;
+        object-fit: cover;
+        }
+
+        @media (max-width: 576px) {
+            .product-picture .img {
+                width: 145px;
+
+            }
+        }
+        ```
