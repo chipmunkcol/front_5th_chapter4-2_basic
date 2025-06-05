@@ -1,9 +1,7 @@
 최초 성능
+
 <img src="./images/readme/스크린샷 2025-06-04 164206.png" width=400 />
 
-최적화 할것들
-
-- main.js 에서 동적으로 country-bar 속성을 변경해 CLS에 영향을 주고 있음 opacity로 변경하면 CLS를 올리지 않을까?
 
 1. FCP
     1) 렌더링 차단 리소스 제거하기
@@ -124,4 +122,7 @@
 
         (적용 후)
         잘 안된것 같다 문제는 section 태그의 best-sellers 가 문제였는데 child요소에 height 값을 줘서 그런가같다.
+        => 해결이 안되네 이거 잘 모르겠다. 
 
+5. 기타
+    - main.js 에서 동적으로 country-bar 속성을 변경해 CLS에 영향을 주고 있음 opacity로 변경하면 CLS를 올리지 않을까?
