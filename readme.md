@@ -93,3 +93,32 @@
             }
         }
         ```
+
+    (적용 후) CLS 지표가 조금 나아졌다. (0.497 -> 0.441) 
+    <img src="./images/readme/스크린샷 2025-06-05 114917.png" width=400 /> 
+    이 부분이 CLS 악영향의 원인인듯
+
+    2) 해당하는 부분에 height 값을 줘봤다 해결이 되려나?
+        ```
+        .container-best {
+            width: 1440px;
+            max-width: 90%;
+            height: 421px;
+            margin: auto;
+            padding: 0 16px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        @media screen and (max-width: 576px) {
+            .container-best {
+                height: 100%;
+
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+        ```
+

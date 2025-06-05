@@ -9,7 +9,18 @@ body {
     max-width: 90%;
     margin: auto;
     padding: 0 16px;
+}
 
+.container-best {
+
+    width: 1440px;
+    max-width: 90%;
+    height: 421px;
+    margin: auto;
+    padding: 0 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 
@@ -742,15 +753,23 @@ footer .copyright-text {
 
 /* End of Design for Mobile Phones */
 
-.product-picture .img {
+.product-picture img {
     width: 100px;
     aspect-ratio: 1/1;
     object-fit: cover;
 }
 
-@media (max-width: 576px) {
-    .product-picture .img {
+@media screen and (max-width: 576px) {
+    .product-picture img {
         width: 145px;
 
+    }
+
+    .container-best {
+        height: 100%;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 }
