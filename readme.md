@@ -1,3 +1,8 @@
+# 바닐라 JS 프로젝트 성능 개선
+- url: [https://front-5th-chapter4-2-basic-bay.vercel.app/](https://front-5th-chapter4-2-basic-bay.vercel.app/)
+
+## 성능 개선 보고서
+
 최초 성능
 
 <img src="./images/readme/스크린샷 2025-06-04 164206.png" width=400 />
